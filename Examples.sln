@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9905A117-71D0-4DAD-94A2-38B4F8FC1F42}"
+	ProjectSection(SolutionItems) = preProject
+		.env = .env
+		docker-compose.yml = docker-compose.yml
+		grafana-datasources.yml = grafana-datasources.yml
+		prometheus.yml = prometheus.yml
+		otel-config.yaml = otel-config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Osint.Sources", "Osint.Sources", "{C8CB0B8E-EBD0-46BF-88BA-BCE7E040643D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Osint.Clients", "Osint.Clients", "{369BA089-283F-4AF3-8114-E83D22CCFFD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osint.Bot", "Osint.Clients\Osint.Bot\Osint.Bot.csproj", "{4CB384F8-E8B0-4620-A5CA-4AFD882941CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osint.Source.Two", "Osint.Sources\Osint.Source.Two\Osint.Source.Two.csproj", "{C2B1D78F-6A56-4117-BADB-FE67F93A59EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Osint.Source.One", "Osint.Sources\Osint.Source.One\Osint.Source.One.csproj", "{5F4B0717-2864-491C-A63B-F58EDAAF0298}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CB384F8-E8B0-4620-A5CA-4AFD882941CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB384F8-E8B0-4620-A5CA-4AFD882941CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB384F8-E8B0-4620-A5CA-4AFD882941CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB384F8-E8B0-4620-A5CA-4AFD882941CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2B1D78F-6A56-4117-BADB-FE67F93A59EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B1D78F-6A56-4117-BADB-FE67F93A59EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B1D78F-6A56-4117-BADB-FE67F93A59EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B1D78F-6A56-4117-BADB-FE67F93A59EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4B0717-2864-491C-A63B-F58EDAAF0298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4B0717-2864-491C-A63B-F58EDAAF0298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4B0717-2864-491C-A63B-F58EDAAF0298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4B0717-2864-491C-A63B-F58EDAAF0298}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4CB384F8-E8B0-4620-A5CA-4AFD882941CE} = {369BA089-283F-4AF3-8114-E83D22CCFFD0}
+		{C2B1D78F-6A56-4117-BADB-FE67F93A59EA} = {C8CB0B8E-EBD0-46BF-88BA-BCE7E040643D}
+		{5F4B0717-2864-491C-A63B-F58EDAAF0298} = {C8CB0B8E-EBD0-46BF-88BA-BCE7E040643D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21BAB5FB-18CE-4F16-A39C-823364C974C7}
+	EndGlobalSection
+EndGlobal
